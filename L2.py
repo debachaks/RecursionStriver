@@ -39,4 +39,14 @@ def f3(n):
     f3(n-1)
 
 n = int(input("Enter a number: "))
-f3(n)    
+f3(n)  
+
+#print from n to 1 using backtracking
+def f3_back(i,n):
+    if i > n:
+        return
+    f3_back(i+1,n)
+    print(i)
+    
+n = int(input("Enter a number: "))
+f3_back(1,n) 
